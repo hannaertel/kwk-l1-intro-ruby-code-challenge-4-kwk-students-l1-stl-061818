@@ -16,7 +16,9 @@ final = {}
 coins.each do |key, values|
  
   final[key] = cents/values
-  final.values.sum == 29
+  if final.values > 29
+    break
+  end
    
 end
 puts final 
